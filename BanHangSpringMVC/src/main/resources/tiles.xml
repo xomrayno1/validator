@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions> 
+
+<definition name="base-definition"
+		template="/WEB-INF/views/layouts/defaultLayout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/layouts/header.jsp" />
+		<put-attribute name="banner"
+			value="/WEB-INF/views/layouts/banner.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layouts/footer.jsp" />
+	</definition> 	
+<definition name="base-definition1"
+		template="/WEB-INF/views/layouts/defaultLayout1.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/layouts/header.jsp" />
+		
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layouts/footer.jsp" />
+	</definition>
+	
+	<definition name="base-definitionadmin" 
+		template="/WEB-INF/views/admin/defaultLayout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/admin/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/admin/menu.jsp" />	
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/admin/footer.jsp" />
+	</definition>  		
+	
+<definition  name="err" template="/WEB-INF/views/err.jsp" />	
+	
+<definition  name="trangchu" extends="base-definition"  > 
+<put-attribute name="body" value="/WEB-INF/views/trangchu.jsp"></put-attribute>
+</definition>
+<definition  name="product" extends="base-definition1"  > 
+<put-attribute name="body" value="/WEB-INF/views/product.jsp"></put-attribute>
+</definition>
+
+<definition name="single" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/single.jsp"></put-attribute>
+</definition>
+
+<definition name="login" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/account.jsp"></put-attribute>
+</definition>
+
+<definition name="register" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/register.jsp"></put-attribute>
+</definition>
+
+<definition name="addprofile" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/addprofile.jsp"></put-attribute>
+</definition>
+
+<definition name="profile" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/profile.jsp"></put-attribute>
+</definition>
+
+<definition name="updateprofile" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/updateprofile.jsp"></put-attribute>
+</definition>
+<definition name="checkout" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/checkout.jsp"></put-attribute>
+</definition>
+<definition name="editpassword" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/user/editpassword.jsp"></put-attribute>
+</definition>
+
+
+<definition name="contact" extends="base-definition1"> 
+<put-attribute name="body" value="/WEB-INF/views/contact.jsp"></put-attribute>
+</definition>
+<definition name="index" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/index.jsp"></put-attribute>
+</definition>
+<definition name="addproduct" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/addproduct.jsp"></put-attribute>
+</definition>
+<definition name="adduser" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/adduser.jsp"></put-attribute>
+</definition>
+<definition name="form" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/form.jsp"></put-attribute>
+</definition>
+<definition name="allproduct" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/allproduct.jsp"></put-attribute>
+</definition>
+<definition name="alluser" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/alluser.jsp"></put-attribute>
+</definition>
+<definition name="bill" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/bill.jsp"></put-attribute>
+</definition>
+<definition name="chitiet" extends="base-definitionadmin"> 
+<put-attribute name="body" value="/WEB-INF/views/admin/chitiet.jsp"></put-attribute>
+</definition>
+<definition  name="loginadmin" template="/WEB-INF/views/admin/login.jsp"/>	
+
+	
+	
+	
+
+</tiles-definitions>
